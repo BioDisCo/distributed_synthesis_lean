@@ -1,0 +1,12 @@
+**
+!lakefile.toml
+!lake-manifest.json
+!lean-toolchain
+!DistributedSynthesis.lean
+!DistributedSynthesis/
+!DistributedSynthesis/**
+!verification/
+!verification/*.py
+!verification/*.lean
+!verification/*.json
+!verification/Dockerfile

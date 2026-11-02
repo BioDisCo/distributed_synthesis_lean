@@ -1,0 +1,107 @@
+# Lean / Lake: keep lakefile.*, lake-manifest.json, and lean-toolchain tracked.
+.lake/
+*.olean
+*.olean.private
+*.olean.server
+*.ilean
+
+# Python bytecode, environments, packaging, and tool caches.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.eggs/
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.ipynb_checkpoints/
+# These directories contain build output; source and lockfiles stay visible.
+build/
+dist/
+
+# Temporary work, including rendered PDF pages (PPM/PNG/etc.).
+tmp/
+.tmp/
+
+# macOS metadata and Finder/resource-fork files.
+.DS_Store
+.AppleDouble/
+.LSOverride
+._*
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+
+# Editor backups and local history. Shared .vscode settings remain trackable.
+.idea/
+.history/
+*.swp
+*.swo
+*~
+.#*
+\#*\#
+
+# Local environment secrets; keep example configurations available.
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Rebuildable LaTeX output. PDF build products are intentionally ignored;
+# use git add -f for a PDF that must be versioned (e.g. a submission asset).
+# TeX/BibTeX/style sources and SVG/PNG/JPEG figure assets remain trackable.
+*.pdf
+*.aux
+*.auxlock
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.lof
+*.lot
+*.loa
+*.lol
+*.nav
+*.snm
+*.spl
+*.vrb
+*.xdv
+*.dvi
+*.idx
+*.ind
+*.ilg
+*.glo
+*.glg
+*.gls
+*.glsdefs
+*.acn
+*.acr
+*.alg
+_minted*/
+
+# Additional notes in old_definitions that are not included by main.tex.
+old_definitions/introduction.tex
+
+slides/
+output/
+

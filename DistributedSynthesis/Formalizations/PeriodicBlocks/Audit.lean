@@ -1,0 +1,31 @@
+/- Project authors: see AUTHORS.md at the repository root. -/
+
+import DistributedSynthesis.Formalizations.PeriodicBlocks.Main
+
+#print axioms Characterisation.PeriodicBlocks.periodic_block_compression
+#print axioms Characterisation.PeriodicBlocks.holes_block_common_root
+#print axioms Characterisation.PeriodicBlocks.representative_local_maps
+#print axioms Characterisation.PeriodicBlocks.strategyRepresentative_replay
+#print axioms Characterisation.PeriodicBlocks.graph_recognizer_live_iff
+#print axioms Characterisation.PeriodicBlocks.prioritySegment_wellFounded
+#print axioms Characterisation.PeriodicBlocks.folded_blocks_parity
+#print axioms Characterisation.PeriodicBlocks.strategy_compressed_threads_accept
+#print axioms Characterisation.PeriodicBlocks.compressed_handover_monitor_accepts
+#print axioms Characterisation.PeriodicBlocks.representative_mem_foldChoices
+#print axioms Characterisation.PeriodicBlocks.blockController_strategy
+#print axioms Characterisation.PeriodicBlocks.blockGame_sound
+#print axioms Characterisation.PeriodicBlocks.strategy_move_exists
+#print axioms Characterisation.PeriodicBlocks.blockGame_complete
+#print axioms Characterisation.PeriodicBlocks.periodic_block_game_iff
+#print axioms Characterisation.PeriodicBlocks.holes_periodic_LTL_characterization
+#print axioms Characterisation.PeriodicBlocks.holes_periodic_LTL_finite_controller
+
+#print axioms Characterisation.PeriodicBlocks.holes_uniform_block_length
+#print axioms Characterisation.PeriodicBlocks.compressionBound_le_numeric
+#print axioms Characterisation.PeriodicBlocks.EncodedBlock.solve_primrec
+#print axioms Characterisation.PeriodicBlocks.encoded_block_solve_correct
+#print axioms Characterisation.PeriodicBlocks.EncodedBlock.solveObjective_primrec
+#print axioms Characterisation.PeriodicBlocks.solveObjective_correct
+#print axioms Characterisation.PeriodicBlocks.periodic_solver_correct
+#print axioms Characterisation.PeriodicBlocks.holes_periodic_primitive_recursive_solver
+#print axioms Characterisation.PeriodicBlocks.holes_periodic_realizable_computable

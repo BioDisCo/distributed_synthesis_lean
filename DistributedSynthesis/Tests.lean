@@ -1,0 +1,60 @@
+/- Project authors: see AUTHORS.md at the repository root. -/
+
+import DistributedSynthesis.Tests.ReusableConstructions
+import DistributedSynthesis.Tests.Logic
+import DistributedSynthesis.Tests.Paper
+import DistributedSynthesis.Tests.MSO
+import DistributedSynthesis.Tests.MSOExecutable
+import DistributedSynthesis.Tests.MSOPrimitiveRecursive
+import DistributedSynthesis.Tests.Views
+import DistributedSynthesis.Tests.Execution
+import DistributedSynthesis.Tests.ControllerCore
+import DistributedSynthesis.Tests.CounterMachinePort
+import DistributedSynthesis.Tests.MathlibHaltingBridge
+import DistributedSynthesis.Tests.BinaryStackBridge
+import DistributedSynthesis.Tests.BSMMacros
+import DistributedSynthesis.Tests.BSMCompiler
+import DistributedSynthesis.Tests.MMArithmetic
+import DistributedSynthesis.Tests.BSMToMM
+import DistributedSynthesis.Tests.MMToFRACTRAN
+import DistributedSynthesis.Tests.MMAArithmetic
+import DistributedSynthesis.Tests.FRACTRANToMMA
+import DistributedSynthesis.Tests.UnconditionalUndecidability
+import DistributedSynthesis.Tests.Automata
+import DistributedSynthesis.Tests.Results
+import DistributedSynthesis.Tests.ComponentGames
+import DistributedSynthesis.Tests.ComponentTrees
+import DistributedSynthesis.Tests.BinaryEncoding
+import DistributedSynthesis.Tests.BinaryAgreement
+import DistributedSynthesis.Tests.BinaryStrategy
+import DistributedSynthesis.Tests.BinaryReduction
+import DistributedSynthesis.Tests.EncodedBinaryReduction
+import DistributedSynthesis.Tests.NextFreeReduction
+import DistributedSynthesis.Tests.NoDirectJournal
+import DistributedSynthesis.Tests.PitermanAllocation
+import DistributedSynthesis.Tests.PitermanTransition
+import DistributedSynthesis.Tests.PitermanCompilation
+import DistributedSynthesis.Tests.TreeNonemptiness
+import DistributedSynthesis.Tests.RunTreeNonemptiness
+import DistributedSynthesis.Tests.PriorityPairMonitor
+import DistributedSynthesis.Tests.DecisionTasks
+import DistributedSynthesis.Tests.EncodedOrbitParity
+import DistributedSynthesis.Tests.EncodedTreeNonemptiness
+import DistributedSynthesis.Tests.NoDirectDecision
+import DistributedSynthesis.Tests.MiyanoHayashiComputable
+import DistributedSynthesis.Tests.LTLComputable
+import DistributedSynthesis.Tests.EncodedLTLFrontend
+import DistributedSynthesis.Tests.EncodedLTLTransitions
+import DistributedSynthesis.Tests.EncodedSupports
+import DistributedSynthesis.Tests.EncodedBreakpoints
+import DistributedSynthesis.Tests.EncodedPiterman
+import DistributedSynthesis.Tests.EncodedCompilers
+import DistributedSynthesis.Tests.EncodedJournal
+import DistributedSynthesis.Tests.EncodedThreadPipeline
+import DistributedSynthesis.Tests.EncodedNoDirectComputable
+import DistributedSynthesis.Tests.NoDirectLTLDecision
+import DistributedSynthesis.Tests.GraphAdversaries
+import DistributedSynthesis.Tests.PrivateInputUndecidability
+
+/-! Compile-time public API regression tests. Type checks discard only informational
+messages; warnings and errors remain visible. Axiom auditing is a separate command. -/

@@ -1,0 +1,59 @@
+/- Project authors: see AUTHORS.md at the repository root. -/
+
+import DistributedSynthesis.Library.Distributed.DecisionTasks
+import DistributedSynthesis.Tests.DecisionTasks
+
+/-! Audited with `python3 scripts/check_library.py --axioms
+DistributedSynthesis/Tests/DecisionTasksAxioms.lean`. -/
+
+#print axioms DistributedSynthesis.DecisionTasks.Source.decidableSolvesTaskAdv
+#print axioms DistributedSynthesis.DecisionTasks.Task.packed_solvable_iff
+#print axioms DistributedSynthesis.DecisionTasks.TwoProcess.decidableTask
+#print axioms DistributedSynthesis.DecisionTasks.TwoProcess.solveTask_correct
+#print axioms DistributedSynthesis.DecisionTasks.TwoProcess.decidableGraphTask
+#print axioms DistributedSynthesis.DecisionTasks.TwoProcess.solveGraphTask_correct
+#print axioms DistributedSynthesis.DecisionTasks.TwoProcess.solveGraphParityTask_correct
+#print axioms DistributedSynthesis.DecisionTasks.ProcessTransport.run
+#print axioms DistributedSynthesis.DecisionTasks.ProcessTransport.solvable_iff
+#print axioms DistributedSynthesis.DecisionTasks.TwoProcess.graphEvent_graphWord
+#print axioms DistributedSynthesis.DecisionTasks.TwoProcess.graphWord_graphEvent
+#print axioms DistributedSynthesis.DecisionTasks.TwoProcess.edgeInterp_iff
+#print axioms DistributedSynthesis.DecisionTasks.TwoProcess.noSilence_correct
+#print axioms DistributedSynthesis.DecisionTasks.TwoProcess.compiled_graph_adversary
+#print axioms DistributedSynthesis.DecisionTasks.TwoProcess.history_eq_iff_view_eq
+#print axioms DistributedSynthesis.DecisionTasks.FiniteViews.solvable_of_solves
+#print axioms DistributedSynthesis.RunParityTreeAutomaton.transitionMonitor_nonempty_iff
+#print axioms DistributedSynthesis.RunParityTreeAutomaton.nonemptyDecidable
+#print axioms DistributedSynthesis.PriorityPairMonitor.combined_correct
+#print axioms DistributedSynthesis.Tests.DecisionTasks.own_inputs_solvable
+#print axioms DistributedSynthesis.Tests.DecisionTasks.private_input_silent
+#print axioms DistributedSynthesis.Tests.DecisionTasks.exchange_impossible_silent
+#print axioms DistributedSynthesis.Tests.DecisionTasks.equal_hist_equal_state
+#print axioms DistributedSynthesis.Tests.DecisionTasks.suppress_initial_output
+#print axioms DistributedSynthesis.DecisionTasks.Source.mem_DIIS_iff
+#print axioms DistributedSynthesis.DecisionTasks.IISGraphs.event_encode
+#print axioms DistributedSynthesis.DecisionTasks.IISGraphs.encode_event
+#print axioms DistributedSynthesis.DecisionTasks.IISGraphs.graph_count
+#print axioms DistributedSynthesis.DecisionTasks.IISGraphs.mem_graphs_iff
+#print axioms DistributedSynthesis.DecisionTasks.IISGraphs.formula_correct
+#print axioms DistributedSynthesis.DecisionTasks.IISGraphs.formula_on_events
+#print axioms DistributedSynthesis.DecisionTasks.Protocol.uniform_bound
+#print axioms DistributedSynthesis.DecisionTasks.IISGraphs.uniform_bound
+#print axioms DistributedSynthesis.DecisionTasks.Protocol.stopAfter_run
+#print axioms DistributedSynthesis.DecisionTasks.IISGraphs.solvable_iff_bounded
+#print axioms DistributedSynthesis.DecisionTasks.IISParticipation.complete_mem_DIIS
+#print axioms DistributedSynthesis.DecisionTasks.IISParticipation.run_complete_eq
+#print axioms DistributedSynthesis.DecisionTasks.IISParticipation.filterInactive_run
+#print axioms DistributedSynthesis.DecisionTasks.IISParticipation.Task.paddedTable_correct
+#print axioms DistributedSynthesis.DecisionTasks.IISParticipation.Task.bounded_transfer
+#print axioms DistributedSynthesis.DecisionTasks.IISParticipation.Task.solvable_iff_bounded
+#print axioms DistributedSynthesis.DecisionTasks.FiniteViews.eval_view
+#print axioms DistributedSynthesis.DecisionTasks.FiniteViews.protocol_run
+#print axioms DistributedSynthesis.DecisionTasks.FiniteViews.iis_solvable_iff_view_maps
+#print axioms DistributedSynthesis.DecisionTasks.FiniteViews.participation_iff_view_maps
+#print axioms DistributedSynthesis.DecisionTasks.IISFiniteSearch.prefixView_correct
+#print axioms DistributedSynthesis.DecisionTasks.IISFiniteSearch.check
+#print axioms DistributedSynthesis.DecisionTasks.IISFiniteSearch.check_correct
+#print axioms DistributedSynthesis.DecisionTasks.ChromaticTasks.Task.padded_empty
+#print axioms DistributedSynthesis.DecisionTasks.ChromaticTasks.Task.partial_outputs_valid
+#print axioms DistributedSynthesis.DecisionTasks.ChromaticTasks.Task.solvable_iff_bounded

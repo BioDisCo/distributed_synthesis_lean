@@ -1,0 +1,53 @@
+/- Project authors: see AUTHORS.md at the repository root. -/
+
+import DistributedSynthesis.Formalizations.Paper.BlockAutomaton
+import DistributedSynthesis.Formalizations.Paper.BoundedConsensus
+import DistributedSynthesis.Formalizations.Paper.BoundedRepresentation
+import DistributedSynthesis.Formalizations.Paper.Broadcaster
+import DistributedSynthesis.Formalizations.Paper.CellInclusion
+import DistributedSynthesis.Formalizations.Paper.CellInterior
+import DistributedSynthesis.Formalizations.Paper.Characterization
+import DistributedSynthesis.Formalizations.Paper.ClopenCones
+import DistributedSynthesis.Formalizations.Paper.Closure
+import DistributedSynthesis.Formalizations.Paper.CommonView
+import DistributedSynthesis.Formalizations.Paper.Compression
+import DistributedSynthesis.Formalizations.Paper.ConcatenationCell
+import DistributedSynthesis.Formalizations.Paper.ConcatenationIndex
+import DistributedSynthesis.Formalizations.Paper.ConcatenationMap
+import DistributedSynthesis.Formalizations.Paper.Consensus
+import DistributedSynthesis.Formalizations.Paper.ConsensusBound
+import DistributedSynthesis.Formalizations.Paper.ControlAgreement
+import DistributedSynthesis.Formalizations.Paper.CounterCompleteness
+import DistributedSynthesis.Formalizations.Paper.CounterEquivalence
+import DistributedSynthesis.Formalizations.Paper.CounterSoundness
+import DistributedSynthesis.Formalizations.Paper.Decidability
+import DistributedSynthesis.Formalizations.Paper.DenseResidual
+import DistributedSynthesis.Formalizations.Paper.EmptyInterior
+import DistributedSynthesis.Formalizations.Paper.ExtremeVertices
+import DistributedSynthesis.Formalizations.Paper.FindIndex
+import DistributedSynthesis.Formalizations.Paper.GeometricMap
+import DistributedSynthesis.Formalizations.Paper.GuardedReduction
+import DistributedSynthesis.Formalizations.Paper.Indistinguishability
+import DistributedSynthesis.Formalizations.Paper.InitialCheck
+import DistributedSynthesis.Formalizations.Paper.LocalSum
+import DistributedSynthesis.Formalizations.Paper.MSO
+import DistributedSynthesis.Formalizations.Paper.MissingExtension
+import DistributedSynthesis.Formalizations.Paper.Model
+import DistributedSynthesis.Formalizations.Paper.PathAgreement
+import DistributedSynthesis.Formalizations.Paper.PathIndex
+import DistributedSynthesis.Formalizations.Paper.PositionOrder
+import DistributedSynthesis.Formalizations.Paper.ProblemStatement
+import DistributedSynthesis.Formalizations.Paper.ProperTransition
+import DistributedSynthesis.Formalizations.Paper.RepeatedConsensus
+import DistributedSynthesis.Formalizations.Paper.RowConditions
+import DistributedSynthesis.Formalizations.Paper.SafetyClosure
+import DistributedSynthesis.Formalizations.Paper.SingleSubdivision
+import DistributedSynthesis.Formalizations.Paper.SpecificationAutomaton
+import DistributedSynthesis.Formalizations.Paper.SymbolicTrees
+import DistributedSynthesis.Formalizations.Paper.UncompressedTrees
+import DistributedSynthesis.Formalizations.Paper.Undecidability
+import DistributedSynthesis.Formalizations.Paper.ViewExtension
+import DistributedSynthesis.Formalizations.Paper.ViewPath
+import DistributedSynthesis.Formalizations.Paper.ZeroCheck
+
+/-! All paper badge destinations are part of the default test build. -/

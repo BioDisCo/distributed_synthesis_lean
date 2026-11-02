@@ -1,0 +1,6 @@
+{
+  "challenge_module": "DistributedSynthesis.Results",
+  "solution_module": "DistributedSynthesis.Results",
+  "theorem_names": [],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

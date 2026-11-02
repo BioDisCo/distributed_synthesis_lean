@@ -1,0 +1,111 @@
+/- Project authors: see AUTHORS.md at the repository root. -/
+import DistributedSynthesis.Formalizations.Undecidability.OneCounterSoundness
+import DistributedSynthesis.Formalizations.Undecidability.CounterArithmetic
+import DistributedSynthesis.Formalizations.Undecidability.Adversaries
+import DistributedSynthesis.Formalizations.Undecidability.GuardedFormulaCorrespondence
+import DistributedSynthesis.Formalizations.Undecidability.FormulaCorrespondence
+import DistributedSynthesis.Formalizations.Undecidability.RowConditions
+import DistributedSynthesis.Formalizations.Undecidability.SoundnessCorrespondence
+import DistributedSynthesis.Results.UnconditionalUndecidability
+import DistributedSynthesis.Library.Distributed.GraphAdversaries.Undecidability.InstanceEncoding
+
+-- Audits the current right-plan-only reduction and its manuscript bridges.
+-- English-proof discrepancies are recorded in the correspondence README.
+#print axioms Characterisation.isOpen_agreeBefore
+#print axioms Characterisation.closure_prefix
+#print axioms Characterisation.prefixDense_iff_dense
+#print axioms Characterisation.safety_closure_transfer
+#print axioms Characterisation.guarded_safety_reduction
+#print axioms Characterisation.nowhere_dense_iff_missing_extension
+#print axioms Characterisation.non_nowhere_dense_has_dense_residual
+#print axioms Characterisation.guarded_safety_reduction_of_dense
+#print axioms DistributedSynthesis.TernaryCounter.encoded_density
+#print axioms DistributedSynthesis.TernaryCounter.encoded_log_counter
+#print axioms DistributedSynthesis.TernaryCounter.forced_log_counters
+#print axioms DistributedSynthesis.TernaryCounter.inclusive_zero_mass
+#print axioms DistributedSynthesis.TernaryCounter.edge_zero_mass
+#print axioms DistributedSynthesis.CounterMachine.nonhalting_of_row_masses
+#print axioms DistributedSynthesis.TernaryCounter.forced_counts
+#print axioms DistributedSynthesis.TernaryCounter.weight_bound
+#print axioms DistributedSynthesis.TernaryCounter.carry_bound
+#print axioms DistributedSynthesis.TernaryCounter.conservation
+#print axioms DistributedSynthesis.TernaryCounter.carry_at_multiple
+#print axioms DistributedSynthesis.CounterMachine.Source.counter_bound
+#print axioms DistributedSynthesis.CounterMachine.Source.realizable_iff_nonhalting
+#print axioms DistributedSynthesis.CounterMachine.ResidueLTL.ltl_realizable_iff_nonhalting
+#print axioms DistributedSynthesis.CounterMachine.Unconditional.encoded_ltl_synthesis_undecidable
+#print axioms Characterisation.counter_conditions_safety
+#print axioms Characterisation.seedStrategy_execution
+#print axioms Characterisation.resetStrategy_execution
+#print axioms Characterisation.no_geometric_holes_undecidable
+#print axioms DistributedSynthesis.CounterMachine.Paper.agreement_iff
+#print axioms DistributedSynthesis.CounterMachine.Paper.left_eq_one
+#print axioms DistributedSynthesis.CounterMachine.Paper.localCheck_iff
+#print axioms DistributedSynthesis.CounterMachine.Paper.initialCheck_iff
+#print axioms DistributedSynthesis.CounterMachine.Paper.pairCheck_iff
+#print axioms DistributedSynthesis.CounterMachine.Paper.conditions_iff_checks
+#print axioms DistributedSynthesis.CounterMachine.Paper.checks_realizable_iff_nonhalting
+#print axioms DistributedSynthesis.CounterMachine.Paper.checks_safety
+#print axioms DistributedSynthesis.CounterMachine.Paper.source_checks
+#print axioms DistributedSynthesis.CounterMachine.Paper.position_coordinates
+#print axioms Characterisation.guarded_objective_safety
+#print axioms DistributedSynthesis.TernaryCounter.logarithmic_mass_step
+#print axioms DistributedSynthesis.TernaryCounter.operation_logarithmic_change
+#print axioms DistributedSynthesis.CounterMachine.Paper.checks_project_winning
+#print axioms DistributedSynthesis.CounterMachine.Paper.checks_row_masses
+#print axioms DistributedSynthesis.CounterMachine.Paper.checks_logarithmic_transition
+#print axioms DistributedSynthesis.CounterMachine.Paper.checks_logarithmic_run
+#print axioms DistributedSynthesis.CounterMachine.Paper.checks_zero_iff_logarithm_zero
+#print axioms DistributedSynthesis.CounterMachine.Paper.formula_logarithmic_run
+#print axioms Characterisation.continuous_prependGraphs
+#print axioms Characterisation.prefixed_mem_closure_of_dense_residual
+#print axioms Characterisation.non_nowhere_dense_has_closed_cone
+#print axioms Characterisation.guardFormula_safety
+#print axioms Characterisation.guardFormula_realizable_iff
+#print axioms Characterisation.guardedCompile_safety
+#print axioms Characterisation.guardedCompile_primrec
+
+-- Individual C1--C5 implications, without a Winning premise.
+#print axioms DistributedSynthesis.CounterMachine.Paper.agreement_row_uniform
+#print axioms DistributedSynthesis.CounterMachine.Paper.position_decodes_view_orientation
+#print axioms DistributedSynthesis.CounterMachine.Paper.execution_view_edge_labels
+#print axioms DistributedSynthesis.CounterMachine.Paper.position_view_edge_labels
+#print axioms DistributedSynthesis.CounterMachine.Paper.local_sum_on_view_edge
+#print axioms DistributedSynthesis.CounterMachine.Paper.zero_boundary_on_row
+#print axioms DistributedSynthesis.CounterMachine.Paper.zero_claim_on_row
+#print axioms DistributedSynthesis.CounterMachine.Paper.initial_check_on_row
+#print axioms DistributedSynthesis.CounterMachine.Paper.transition_child_weight
+#print axioms DistributedSynthesis.CounterMachine.Paper.transition_leftmost_control
+
+#print axioms DistributedSynthesis.CounterMachine.Paper.child_index_eq
+#print axioms DistributedSynthesis.CounterMachine.Paper.transition_weight_at_child_position
+
+-- Exact scalar alphabet and global C0--C5 equivalence.
+#print axioms DistributedSynthesis.CounterMachine.Paper.row_position_iff
+#print axioms DistributedSynthesis.CounterMachine.Paper.checks_global_rows
+#print axioms DistributedSynthesis.CounterMachine.Paper.GlobalRows.checks
+#print axioms DistributedSynthesis.CounterMachine.Paper.global_rows_iff_checks
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.next_first
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.op_first
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.op_second
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.run_embed
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.nonhalting_iff
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.checks_embed_iff
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.Checks.project
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.checks_realizable_iff
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.satisfies_iff
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.formula_realizable_iff
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.advance_ofCode
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.ofCode_realizable_iff
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.global_rows_embed_iff
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.global_rows_iff_formula
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.position_rows
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.agreement_row_uniform
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.local_sum_on_view_edge
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.zero_claim_on_row
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.initial_check_on_row
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.transition_child_weight
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.transition_leftmost_control
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.formula_logarithmic_run
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.formula_zero_exact
+#print axioms DistributedSynthesis.CounterMachine.OneCounter.source_realizes
