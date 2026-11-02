@@ -4,6 +4,8 @@ Lean formalization accompanying the paper by Benedikt Bollig,
 Patricia Bouyer-Decitre, Matthias Függer, Dhrubajyoti Ghosh,
 Thomas Nowak, and Nathalie Sznajder.
 
+See [AUTHORS.md](AUTHORS.md) for the authors and acknowledgments.
+
 ## Checking the proofs
 
 Install [elan](https://github.com/leanprover/elan), Git, and Python 3.11 or later.
